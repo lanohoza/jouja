@@ -1,0 +1,120 @@
+
+/*# sourceMappingURL=domicile.component.css.map */
+@charset "UTF-8";
+.container {
+    margin-top: 2%;
+  }
+  
+  .cart {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #ffff;
+  }
+  
+  .cart div {
+    margin-top: 2%;
+  }
+  
+  .input-group {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .input-group .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .input-group .inputs .input-field {
+    padding: 1%;
+    margin: 1%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #b4b4b4;
+    outline: none;
+    background: transparent;
+  }
+  
+  .input-group .inputs .input-field:focus {
+    border-bottom: 1px solid #0053F0;
+  }
+  
+  .input-group .inputs .input-def {
+    text-align: center;
+    margin-top: 1%;
+    margin: 1%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #b4b4b4;
+    outline: none;
+    background: transparent;
+  }
+  
+  .input-group .inputs .input-def:focus {
+    border-bottom: 1px solid #0053F0;
+  }
+  
+  .btnS {
+    color: #ffff;
+    background-color: #0053F0;
+  }
+  
+  .btnS:hover {
+    background-color: #ffff;
+    color: #0053F0;
+    border: 1px solid #0053F0;
+  }
+  
+  .backbtn:hover ::after {
+    color: #0053F0;
+    margin-left: 2px;
+    content: "retour à la page de commande";
+  }
+  
+  .backbtn i:hover {
+    color: #0053F0;
+  }
+  
+  .nextbtn:hover ::after {
+    margin-right: 1px;
+    color: #0053F0;
+    content: "aller à la page de paiement";
+    float: left;
+  }
+  
+  .nextbtn i:hover {
+    color: #0053F0;
+    float: right;
+  }
+  
+  .icon i:hover {
+    color: #0053F0;
+  }
+  
+  .iconwatch {
+    color: #0053F0;
+  }
+  
+  .darken {
+    color: #00308a;
+  }
+  
+  .active {
+    color: #0053F0;
+  }
+  /*# sourceMappingURL=domicile.component.css.map */

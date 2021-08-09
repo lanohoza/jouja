@@ -1,0 +1,51 @@
+
+<div class="container ">
+    <a class="btn icon backbtn "><i class="fas fa-chevron-circle-left fa-lg"></i></a>
+    <div class="row  justify-content-center auto ">
+       
+      
+        <!-------------cart 1-->
+        <div class="card text-center  mx-2 my-2" style="width: 18rem;">
+            <div class="card-body ">
+                <h1 class="icon"><i  [ngClass]="{'active': (DeliveryOption=='home')}" class="fas fa-shipping-fast" (click)="ChangeDeliverytOption('Home')" ></i></h1>
+
+                
+                <a  class="btn mt-4" (click)="ChangeDeliverytOption('Home')" >Livraison a domicile</a>
+
+            </div>
+        </div>
+        <!-----------cart 2-->
+        <div class="card text-center  mx-2 my-2" style="width: 18rem;">
+            <div class="card-body ">
+                <h1 class="icon"><i [ngClass]="{'active': (DeliveryOption=='point')}" class="fas fa-map-marked-alt"  (click)="ChangeDeliverytOption('Point')" ></i></h1>
+
+                
+                <a  class="btn mt-4" (click)="ChangeDeliverytOption('Point')" >Livraison a point de livraison </a>
+            </div>
+        </div>
+        
+        <!----cart 3--------->
+        <div class="card text-center  mx-2 my-2" style="width: 18rem;">
+            <div class="card-body ">
+                <h1 class="icon"><i [ngClass]="{'active': (DeliveryOption=='pointseller')}" class="fas fa-store"  (click)="ChangeDeliverytOption('PointSeller')" ></i></h1>
+
+                
+                <a  class="btn mt-4" (click)="ChangeDeliverytOption('PointSeller')" >Point Livraison chez le vendeur</a>
+            </div>
+        </div>
+
+        
+           
+        
+       
+        
+    </div>
+   
+</div>
+<div class="container my-2 ">
+    <app-delivery-home *ngIf="DeliveryOption=='home'"></app-delivery-home>
+<app-delivery-point  *ngIf="DeliveryOption=='point'"></app-delivery-point>
+<app-delivery-point-seller *ngIf="DeliveryOption=='pointseller'"></app-delivery-point-seller>
+</div>
+
+

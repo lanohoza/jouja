@@ -1,0 +1,76 @@
+<div class="row  auto justify-content-center ">
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col-sm-offset-0 m-lg-2 m-md-2 cart ">
+
+        <form id=" " action=" " class="input-group ">
+            <div class="inputs col-md-12 col-sm-12 col-lg-12 ">
+                <!---------wilaya- ville--->
+                <div class="row justify-content-center ">
+                    <!-------wilaya-->
+
+                    <input type="text " name="options " class="input-def " list="options " placeholder="Wilaya " required/>
+                    <datalist id="options ">
+                            <option *ngFor="let w of WilayaList " [value]="w" >{{w}}</option>
+                            
+                            </datalist>
+
+
+                    <!----------wilaya-->
+
+
+                    <!------commune----->
+
+                  
+                    <input type="text " name="options " class="input-def  " list="communes " placeholder="Commune " required/>
+                    <datalist id="communes ">
+                        <option *ngFor="let c of CommunesList " [value]="c"  >{{c}}</option>
+                        
+                        </datalist>
+                    <input type="text "   class="input-def  "   placeholder="code postal" required/>
+                    <!--------commune-->
+                    
+                </div>
+
+                <!--------wilaya-ville-->
+            
+               <input type="text " class=" input-field "  placeholder="N°domicile, la rue/avenue " required>
+                   
+               
+
+                <input type="text " class="input-field " name="Telephone " placeholder=" Telephone " required>
+                <input type="email " class="input-field " name="Email " placeholder="Email " required>
+                <input type="text " class="input-field " name="gps " placeholder="Link GPS " required>
+            </div>
+
+            <!----button-->
+            <div class="buttons my-2 ">
+                <button class="btn my-2 btnS ">Payer</button>
+
+
+                <!----button-->
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+</div>
+<div class="row justify-content-center">
+    <div class="d-flex flex-column m-0  ">
+       <app-delay-delivery></app-delay-delivery>
+
+        <!------------------- les frais de transport ---------------------->
+        <div class="  d-flex row justify-content-center">
+            <i class="fas fa-money-check-alt mr-1 darken"></i>
+
+            <p class="mx-1">les frais de transport</p>
+            <b class="mx-2 darken"> 20.00dz</b>
+        </div>
+
+    </div>
+
+
+
+</div>

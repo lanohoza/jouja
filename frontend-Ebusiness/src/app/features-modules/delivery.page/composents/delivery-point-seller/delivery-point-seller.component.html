@@ -1,0 +1,70 @@
+<div class="container my-2 ">
+    <div class="row  cart">
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col-sm-offset-0  mt-4">
+
+            <form id=" " action=" " class="input-group m-0">
+                <div class="inputs col-md-12 col-sm-12 col-lg-12 ">
+                    <div class="row">
+
+
+
+                        <div class=" col-sm-12 px-4">
+                            <input type="text " class="input-field col-12" name="Telephone " placeholder=" Telephone " required>
+                            <input type="email " class="input-field col-12" name="Email " placeholder="Email " required>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <!----button-->
+                <div class="buttons my-2 ">
+                    <button class="btn my-2 btnS ">Payer</button>
+
+
+                    <!----button-->
+
+                </div>
+                
+            </form>
+            <div class="mt-4 mx-2 mb-0 d-flex row">
+                <p class="">l’adresse de point de livraison:<b class=""> 29 avenue Emir AbdelKader , 18000 Jijel </b></p>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-6 mt-2  ">
+            <!------------------map-->
+            <div id="map">
+
+                <agm-map [latitude]='lat' [longitude]='long'>
+
+                    <agm-marker [latitude]="lat" [longitude]="long" >
+                    </agm-marker>
+
+                </agm-map>
+                <div class="col-12 d-flex justify-content-center ">
+                    <a href="" class="stretched-link">localisation de point de livraison chez  le vendeur </a>
+                </div>
+            </div>
+            <!-------map-->
+
+
+        </div>
+
+
+
+    </div>
+    <app-delay-delivery></app-delay-delivery>
+
+
+
+    </div>
